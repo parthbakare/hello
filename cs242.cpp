@@ -31,6 +31,11 @@
 >tar -xvzf file.tar.gz test.doc (to extract test.doc.file)
 >tar -tvf file.tar.gz(detailed content by listing all files in archive)
 
+x: This option tells tar to extract the files.
+v: The “v” stands for “verbose.” This option will list all of the files one by one in the archive.
+z: The z option is very important and tells the tar command to uncompress the file (gzip).
+f: This options tells tar that you are going to give it a file name to work with
+
 7)tree 
 to generate the tree 
 
@@ -120,9 +125,9 @@ ls -R **/*.txt
 >head -n no_of_lines /path/to file 
 (prints first n lines)
 
->head -n no_of_lines /path/to file | tail -m no_of lines
+>head -n no_of_lines /path/to file | tail -n no_of lines
 >print lines between a and b 
->head -n a+b /path/to file | tail -m b-a 
+ head -n b /path/to file | tail -n b-a 
 
 19)cut 
 >cut -c2 file.txt ()
@@ -134,5 +139,10 @@ used to sort alphabetically
 21)uniq
 uniq elements printed
 
-22)top 
+22)top or ps
 find the current running process 
+
+23)ps -aux | grep name_of_browser
+
+24)kill:
+>kill process id
